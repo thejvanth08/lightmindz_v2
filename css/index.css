@@ -64,10 +64,64 @@ header {
     color: white;
 }
 
-header .nav-bar {
-    display: none;
+.nav-bar {
+    position: absolute;
+    transform: translateY(-100%);
+    top: 0;
+    right: 0;
+    transition: all 1s;
+    transition: transform 0.5s;
 }
 
+.nav-bar.active {
+    transform: translateX(0%);
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    text-transform: uppercase;
+} 
+
+.nav-bar.active a {
+    display: block;
+    padding: 20px 16px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.nav-bar.active ul a:hover {
+    color: white;
+    background-color: var(--TERTIARY-COLOR);
+}
+
+.nav-bar.active ul {
+    margin-top: 40px;
+}
+
+.close-nav-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#close-nav {
+    /* color of icon is white */
+    color: black;
+    z-index: 1000;
+    font-size: 2em;
+    margin: 30px 30px 0;
+    cursor: pointer;
+}
+.profile-container {
+    display: flex;
+    justify-content: start;
+    margin-top: 30px;
+}
+.profile-container i {
+    font-size: 2.5em;
+    color: rgb(172, 172, 172);
+    padding: 16px;
+    border: 5px solid rgb(172, 172, 172);
+    border-radius: 50%;
+}
 #hero {
     background-color: var(--PRIMARY-COLOR);
     color: white;
@@ -149,6 +203,7 @@ section {
     background-color: var(--SECONDARY-COLOR);
     padding: 8px 15px;
     border-radius: 20px;
+    text-transform: uppercase;
 }
 
 #hero .btn:hover {
@@ -158,9 +213,10 @@ section {
 }
 
 /* For SVG */
-#wave {
+#hero-wave{
     position: relative;
-    bottom: 15px;
+    z-index: -1;
+    bottom: 2px;
 }
 
 .heading {
@@ -392,6 +448,7 @@ section {
     #hero {
         padding: 25px 25px 20px;
     }
+
     .hero-text {
         /* 5 cols for text */
         grid-column: 1/6;
@@ -402,6 +459,7 @@ section {
         /* 3 cols for img */
         grid-column: 6/9;
     }
+
 
     .grid {
         gap: 15px;
@@ -487,6 +545,26 @@ section {
 
     body {
         font-size: 18px;
+    }
+
+    .nav-bar {
+        transform: translateX(0%);
+        position: static;
+     
+        transition: all 0.3s;
+    }
+
+    /* to not hide close btn in nav-bar (which is for mobile) */
+    .close-nav-container {
+        display: none;
+    }
+
+    #close-nav {
+        display: none;
+    }
+    /* this is only for mobile and small tablets */
+    .profile-container {
+        display: none;
     }
 
     h1 {
