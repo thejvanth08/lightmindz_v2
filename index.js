@@ -67,6 +67,10 @@ getStarted.addEventListener("click", () => {
     startVelocity: 45,
   });
 
+  setTimeout( () => {
+    window.location.assign("login.html");
+  }, 1500);
+
 });
 
 
