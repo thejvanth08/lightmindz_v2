@@ -178,34 +178,36 @@ section {
     text-align: center;
 }
 
-.inner-icon {
+#benefits .inner-icon {
     /* border: 2px solid purple; */
     border-radius: 10px;
     padding: 10px;
     display: inline-block;
 }
 
-.inner-icon i {
+#benefits .inner-icon i {
     font-size: 3em;
     color: var(--TERTIARY-COLOR);
 }
 
-.inner-text h4 {
+#benefits .inner-text h4 {
+    font-size: 1.1em;
     margin: 5px 0 3px;
 }
 
-.outer:hover .inner-icon{
+#benefits .outer:hover .inner-icon{
     /* color: white; it wont be applied to icon */
     background-color: var(--PRIMARY-COLOR);
 }
 
-.outer:hover .inner-icon i {
+#benefits .outer:hover .inner-icon i {
     color: white;
 }
 
 /* Procedure section */
 #procedure {
     background-color: var(--SECONDARY-COLOR);
+    padding-bottom: 10px;
 }
 
 /* For svg */
@@ -216,4 +218,167 @@ section {
 
 #procedure .heading {
     padding-top: 10px;
+}
+
+#procedure .outer {
+    grid-column: 2/8;
+    text-align: center;
+    background-color: white;
+    margin: 16px auto;
+    padding: 30px 15px;
+    border-radius: 10px;
+}
+
+#procedure .outer:hover {
+    box-shadow: 3px 4px 8px var(--TERTIARY-COLOR), -4px -4px 8px var(--TERTIARY-COLOR);
+}
+
+#procedure .inner-icon {
+    display: inline-block;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    padding: 10px;
+    /* background-color: #8D8596; */
+}
+
+#procedure .inner-icon i {
+    color: var(--TERTIARY-COLOR);
+    font-size: 3.5em;
+}
+
+#procedure .inner-text h4 {
+    color: var(--PRIMARY-COLOR);
+    font-size: 1.1em;
+    margin: 6px 0 3px;
+}
+
+#procedure .outer:hover .inner-icon {
+    background-color: var(--PRIMARY-COLOR);
+}
+
+#procedure .outer:hover .inner-icon i {
+    color: white;
+}
+
+#procedure .outer:hover .inner-text h4 {
+    transform: scale(1.1);
+}
+
+/* Features styles */
+#features {
+    padding-bottom: 20px;
+}
+
+#features .outer {
+    /* background-color: var(--TERTIARY-COLOR); */
+    border: 3px solid var(--TERTIARY-COLOR);
+    border-radius: 20px;
+    grid-column: 2/8;
+    text-align: center;
+    padding: 10px 8px;
+    margin-bottom: 15px;
+    transition: all 0.2s, color 0.1s;
+}
+
+#features img {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+}
+#features h4 {
+    font-size: 1.1em;
+    margin: 5px 0 4px;
+}
+
+#features .outer:hover {
+    background-color: var(--PRIMARY-COLOR);
+    color: white;
+}
+
+#features .outer:hover h4 {
+    color: var(--SECONDARY-COLOR);
+}
+
+#feautres div.btn-container {
+    padding: 0;
+}
+
+#features .btn:hover {
+    letter-spacing: 1px;
+}
+
+
+/* Testimonials styles */
+#testimonials {
+    margin-bottom: 80px;
+}
+
+#testimonials .swiper-slide {
+    background-color: var(--OTHER-COLOR);
+    padding: 30px;
+    border: 2px solid var(--SECONDARY-COLOR);
+    border-radius: 20px;
+}
+
+#testimonials p {
+    color: var(--PRIMARY-COLOR);
+}
+
+#testimonials .swiper {
+    width: 85%;
+}
+
+.user-img i {
+    font-size: 4em;
+    color: var(--TERTIARY-COLOR);
+    display: inline-block;
+    border-radius: 50%;
+    padding: 16px;
+}
+
+.user-img {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer styles */
+#footer {
+    background-color: var(--PRIMARY-COLOR);
+    color: white;
+    padding: 30px 15px;
+}
+
+#footer div {
+    grid-column: 3/7;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+#footer li a {
+    color: white;
+}
+
+#footer-wave {
+    position: relative;
+    top: 10px;
+}
+
+.flogo img {
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+
+#footer h3 {
+    margin-bottom: 3px;
+}
+
+#footer h4 {
+    font-size: 1.1em;
+    color: var();
+}
+
+.logo-light {
+    color: #fff700;
 }

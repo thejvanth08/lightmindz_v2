@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>lightMindz</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
     <header class="grid">
 
         <h3 class="logo">
-            <a href="#"><img src="./assets/logo.png" width="25" height="25"><span class="logo-text">lightMindz</span></a>
+            <a href="#"><img src="./assets/logo.png" width="25" height="25"><span class="logo-text"><span class="logo-light">Light</span>Mindz</span></a>
         </h3>
 
         <nav class="nav-bar">
@@ -125,28 +126,30 @@
 
             <div class="outer">
                 <div class="inner-icon">
-
+                    <i class="fa-solid fa-user-plus"></i>
                 </div>
                 <div class="inner-text">
-                    
+                    <h4>Sign Up and Personalize</h4>
+                    <p> Begin by signing up for an account on our website. Create a personalized profile where you can set your preferences and goals.</p>
+                </div>
+            </div>
+
+            <div id="explore-smiley" class="outer">
+                <div class="inner-icon">
+                    <i id="smiley" class="fa-solid fa-face-smile"></i>                </div>
+                <div class="inner-text">
+                    <h4>Explore and Engage</h4>
+                    <p> Dive into our comprehensive features and resources. Discover guided meditations, yoga sessions, educational articles, and self-help tools.</p>
                 </div>
             </div>
 
             <div class="outer">
                 <div class="inner-icon">
-
+                    <i class="fa-solid fa-people-roof"></i>
                 </div>
                 <div class="inner-text">
-
-                </div>
-            </div>
-
-            <div class="outer">
-                <div class="inner-icon">
-
-                </div>
-                <div class="inner-text">
-
+                    <h4>Connect and Grow</h4>
+                    <p>Connect with like-minded individuals on our platform. Participate in discussions, join support groups, and exchange experiences in a safe and understanding environment.</p>
                 </div>
             </div>
 
@@ -159,19 +162,130 @@
    
    
     <!-- Features section -->
-    <section class="features">
+    <section id="features">
+        <h2 class="heading">Features we offer</h2>
 
+        <div class="grid">
+            
+            <div class="outer">
+                <div class="inner-img">
+                    <img src="assets/chatbot.png" width="100" height="100">
+                </div>
+                <div class="inner text">
+                    <h4>Friendly Chatbot</h4>
+                    <p>Get real-time support and guidance for managing mental health symptoms through an interactive AI-powered conversation, available 24/7.</p>
+                </div>
+            </div>
+
+            <div class="outer">
+                <div class="inner-img">
+                    <img src="assets/yoga.png" width="100" height="100" alt="">
+                </div>
+                <div class="inner text">
+                    <h4>AI Yoga Trainer</h4>
+                    <p>Achieve mental and physical balance with personalized yoga instruction powered by AI technology.</p>
+                </div>
+            </div>
+
+            <div class="outer">
+                <div class="inner-img">
+                    <img src="assets/online.png" width="100" height="100" alt="">
+                </div>
+                <div class="inner text">
+                    <h4>Online Consultation</h4>
+                    <p>Connect with licensed mental health professionals in a safe and convenient online environment.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="btn-container">
+            <a class="btn" href="features.html">Check it now</a>
+        </div>
 
     </section>
-
-
 
     <!-- Testimonials section -->
-    <section class="testimonials">
+    <section id="testimonials">
+    <h2 class="heading">User Experiences</h2>
 
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <div class="user-img">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="user-text">
+                <p>"I was skeptical about online mental health care at first, but this app has completely changed my mind. The chatbot feature has helped me through some tough moments, and the AI yoga trainer is like having a personal yoga instructor in my pocket. I highly recommend this app to anyone looking for convenient and effective mental health support." - Jane M</p>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="user-img">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="user-text">
+                <p>"I live in a rural area and getting access to mental health care has always been a struggle for me. This app has been a game-changer. The online consultation feature has allowed me to connect with a licensed therapist from the comfort of my own home, and the self-help tools like guided meditation have been incredibly helpful for managing my anxiety." - John R</p>
+            </div>      
+         </div>
+
+        <div class="swiper-slide">
+            <div class="user-img">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="user-text">
+                <p>"As someone who has struggled with depression for years, I can't express how much this app has helped me. The chatbot feature has provided me with instant support and coping strategies, and the AI yoga trainer has been a great tool for managing my symptoms. I feel like I finally have the resources I need to take control of my mental health." - Sarah L</p>
+            </div>      
+         </div>
+
+        
+        
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
 
     </section>
 
+    <!-- footer -->
+    <svg id="footer-wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 130" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(89, 40, 229, 1)" offset="0%"></stop><stop stop-color="rgba(185.286, 11, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,26L40,36.8C80,48,160,69,240,73.7C320,78,400,65,480,65C560,65,640,78,720,88.8C800,100,880,108,960,101.8C1040,95,1120,74,1200,60.7C1280,48,1360,43,1440,45.5C1520,48,1600,56,1680,60.7C1760,65,1840,65,1920,73.7C2000,82,2080,100,2160,93.2C2240,87,2320,56,2400,49.8C2480,43,2560,61,2640,62.8C2720,65,2800,52,2880,56.3C2960,61,3040,82,3120,95.3C3200,108,3280,113,3360,106.2C3440,100,3520,82,3600,71.5C3680,61,3760,56,3840,47.7C3920,39,4000,26,4080,26C4160,26,4240,39,4320,39C4400,39,4480,26,4560,28.2C4640,30,4720,48,4800,58.5C4880,69,4960,74,5040,80.2C5120,87,5200,95,5280,86.7C5360,78,5440,52,5520,34.7C5600,17,5680,9,5720,4.3L5760,0L5760,130L5720,130C5680,130,5600,130,5520,130C5440,130,5360,130,5280,130C5200,130,5120,130,5040,130C4960,130,4880,130,4800,130C4720,130,4640,130,4560,130C4480,130,4400,130,4320,130C4240,130,4160,130,4080,130C4000,130,3920,130,3840,130C3760,130,3680,130,3600,130C3520,130,3440,130,3360,130C3280,130,3200,130,3120,130C3040,130,2960,130,2880,130C2800,130,2720,130,2640,130C2560,130,2480,130,2400,130C2320,130,2240,130,2160,130C2080,130,2000,130,1920,130C1840,130,1760,130,1680,130C1600,130,1520,130,1440,130C1360,130,1280,130,1200,130C1120,130,1040,130,960,130C880,130,800,130,720,130C640,130,560,130,480,130C400,130,320,130,240,130C160,130,80,130,40,130L0,130Z"></path></svg>
+    <footer id="footer" class="grid">
 
+        <div class="fcompany">
+            <h3 class="flogo">
+                <a href="#"><img src="./assets/logo.png" width="25" height="25"><span class="logo-text"><span class="logo-light">Light</span>Mindz</span></a>
+            </h3>
+            <p>Live Free. Stay Fit.</p>
+        </div>
+
+        <div class="sitemap">
+            <h4>Sitemap</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login/Sign up</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="legal">
+             <h4>Legal</h4>
+           <ul>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="policies.html">Privacy Policy</a></li>
+           </ul>
+        </div>
+
+    </footer>
+
+    <!-- swiperjs cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- js links -->
+    <script src="./index.js"></script>
 </body>
 </html>
