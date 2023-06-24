@@ -16,4 +16,9 @@ var swiper = new Swiper(".mySwiper", {
       shadowOffset: 20,
       shadowScale: 0.94,
     }
-  });
+  }); 
+
+// width & height of viewport
+const width = window.outerWidth;
+const height = window.outerHeight;
+console.log(width, height);
